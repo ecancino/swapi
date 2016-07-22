@@ -1,0 +1,164 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+
+header {
+  text-align: center;
+}
+
+.hide { display: none; }
+.show { display: inherit; }
+
+.float-right { float: right; }
+.float-left { float: left; }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.close {
+  font-family: 'Coming Soon', cursive !important;
+  float: left;
+  position: relative;
+  top: 12px;
+}
+
+small {
+  font-size: smaller;
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  border-top: 1px solid rgb(250, 241, 35);
+}
+
+h1, h2  {
+  color: rgb(250, 241, 35);
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+a {
+  font-family: 'Source Code Pro', sans-serif;
+  color: rgb(250, 241, 35);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+#loading {
+  position: relative;
+}
+
+.loader {
+  width: 100%;
+  margin: 0;
+}
+
+.loader::before {
+  content: '';
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('bb-8.gif') 50% -15px no-repeat;
+  background-size: 100px;
+  height: 45px;
+  width: 45px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list li {
+  text-align: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.list li a {
+  font-size: 14px;
+  display: inline-block;
+  min-width: 100%;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid rgb(250, 241, 35);
+}
+
+.list li a:hover,
+.list li a.active {
+  font-weight: bold;
+  color: black;
+  background: rgb(250, 241, 35)
+}
+
+.list-film li {
+  width: 33%;
+}
+
+.list-character li,
+.list-species li,
+.list-planets li {
+  width: 25%;
+}
+
+.list-vehicle li {
+  width: 50%;
+}
+
+.details div {
+  margin: 20px 0;
+}
+
+.details div h2 {
+  border-bottom: 1px solid white;
+}
+
+p, span, a, em {
+  font-family: 'Source Code Pro', monospace;
+}
+
+em {
+  color: rgb(250, 241, 35);
+  font-weight: bold;
+}
+
+p { margin-bottom: 15px; }
+
+img {
+  width: 310px;
+}
+
+img[src=""] {
+  display: none;
+}
+
+.container {
+	width: 90%;
+	max-width: 800px;
+	margin: 20px auto;
+}

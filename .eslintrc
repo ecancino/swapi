@@ -1,0 +1,24 @@
+{
+  "extends": ["kentcdodds/react", "kentcdodds/import", "kentcdodds/webpack"],
+  "rules": {
+    // these are only here because I did not
+    // want to update the entire codebase ¯\_(ツ)_/¯
+    "func-names": 0,
+    "no-var": 0,
+    "func-style": 0,
+    "comma-dangle": 0,
+    "valid-jsdoc": 0,
+    "vars-on-top": 0,
+    "complexity": [2, 6],
+    "no-console": 0,
+    "array-bracket-spacing": 0,
+    "object-curly-spacing": 0,
+    "semi": 1,
+    "linebreak-style": 0
+  },
+  "globals": {
+    "describe": false,
+    "it": false,
+    "expect": false
+  }
+}
