@@ -4,6 +4,7 @@ import React from 'react'
 import Close from './Close'
 import u from './../utils'
 import SpeciesList from './SpeciesList'
+import StarshipList from './StarshipList'
 import VehicleList from './VehicleList'
 import PlanetList from './PlanetList'
 import FilmList from './FilmList'
@@ -47,6 +48,10 @@ export default class CharacterDetail extends React.Component {
         <div>
           <h2>Homeworld</h2>
           <PlanetList planets={[person.homeworld]}/>
+        </div>
+        <div>
+          <h2>Starships</h2>
+          <StarshipList starships={person.starships}/>
         </div>
         <div>
           <h2>Vehicles</h2>

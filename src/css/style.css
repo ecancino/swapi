@@ -116,13 +116,14 @@ li {
   background: rgb(250, 241, 35)
 }
 
+.list-starship li,
 .list-film li {
   width: 33%;
 }
 
 .list-character li,
 .list-species li,
-.list-planets li {
+.list-planet li {
   width: 25%;
 }
 
