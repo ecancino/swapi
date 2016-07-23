@@ -5,6 +5,7 @@ import Close from './Close'
 import u from './../utils'
 import CharacterList from './CharacterList'
 import Section from './Section'
+import Loader from './Loader'
 
 export default class PlanetDetail extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ export default class PlanetDetail extends React.Component {
   }
   render() {
     const { planet } = this.state
-    return (
+    return this.state.loading ? <Loader/> : (
       <section className="details">
         <div>
           <Close history={this.props.history} />
