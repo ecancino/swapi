@@ -27,13 +27,13 @@ export default class PlanetDetail extends React.Component {
           <Close history={this.props.history} />
           <h1>{planet.name}</h1>
           <div className="row">
-            <p className="col-xs-3"><em>Climate:</em> {planet.climate}</p>
+            <p className="col-xs-9"><em>Terrain:</em> {planet.terrain}</p>
             <p className="col-xs-3"><em>Diameter:</em> {planet.diameter}</p>
+            <p className="col-xs-6"><em>Climate:</em> {planet.climate}</p>
             <p className="col-xs-3"><em>Gravity:</em> {planet.gravity}</p>
+            <p className="col-xs-3"><em>Water:</em> {planet.surface_water}</p>
             <p className="col-xs-3"><em>Orbit:</em> {planet.orbital_period}</p>
             <p className="col-xs-3"><em>Rotation:</em> {planet.rotation_period}</p>
-            <p className="col-xs-3"><em>Water:</em> {planet.surface_water}</p>
-            <p className="col-xs-6"><em>Terrain:</em> {planet.terrain}</p>
           </div>
         </div>
         <div>

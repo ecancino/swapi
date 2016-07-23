@@ -6,6 +6,7 @@ import u from './../utils'
 import CharacterList from './CharacterList'
 import PlanetList from './PlanetList'
 import VehicleList from './VehicleList'
+import StarshipList from './StarshipList'
 import Close from './Close'
 import Loader from './Loader'
 
@@ -46,6 +47,10 @@ export default class FilmDetail extends React.Component {
         <div>
           <h2>Planets</h2>
           <PlanetList planets={film.planets}/>
+        </div>
+        <div>
+          <h2>Starships</h2>
+          <StarshipList starships={film.starships}/>
         </div>
         <div>
           <h2>Vehicles</h2>

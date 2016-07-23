@@ -10,7 +10,7 @@ export default class PlanetList extends React.Component {
       return <PlanetListItem key={key} url={url}/>
     }, this.props.planets || [])
     return (
-      <ul className="row list list-planets between-xs">
+      <ul className="row list list-planet between-xs">
         {planets}
       </ul>
     )

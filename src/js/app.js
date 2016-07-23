@@ -10,6 +10,7 @@ import PlanetDetail from './components/PlanetDetail'
 import VehicleDetail from './components/VehicleDetail'
 import SpeciesDetail from './components/SpeciesDetail'
 import CharacterDetail from './components/CharacterDetail'
+import StarshipDetail from './components/StarshipDetail'
 
 console.log('React', React)
 
@@ -29,6 +30,7 @@ ReactDOM.render((
       <Route path="/vehicle/:url" component={VehicleDetail}/>
       <Route path="/species/:url" component={SpeciesDetail}/>
       <Route path="/character/:url" component={CharacterDetail}/>
+      <Route path="/starship/:url" component={StarshipDetail}/>
     </Route>
   </Router>
 ), document.querySelector('#app'))

@@ -8,7 +8,7 @@ import Loader from './Loader'
 export default class PlanetListItem extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { person: {}, loading: true }
+    this.state = { planet: {}, loading: true }
     this.loadPlanet()
   }
   loadPlanet() {
