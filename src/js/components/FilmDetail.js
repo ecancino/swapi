@@ -7,8 +7,9 @@ import CharacterList from './CharacterList'
 import PlanetList from './PlanetList'
 import VehicleList from './VehicleList'
 import StarshipList from './StarshipList'
-import Close from './Close'
+import Section from './Section'
 import Loader from './Loader'
+import Close from './Close'
 
 export default class FilmDetail extends React.Component {
   constructor(props) {
@@ -40,22 +41,18 @@ export default class FilmDetail extends React.Component {
           <p className="col-xs-6 text-right"><em>Release Date:</em> {dateFormat(film.release_date, 'fullDate')}</p>
           <p className="col-xs-12"><em>Producer:</em> {film.producer}</p>
         </div>
-        <div>
-          <h2>Characters</h2>
+        <Section title="Characters" toggle={film.characters.length}>
           <CharacterList characters={film.characters}/>
-        </div>
-        <div>
-          <h2>Planets</h2>
+        </Section>
+        <Section title="Planets" toggle={film.planets.length}>
           <PlanetList planets={film.planets}/>
-        </div>
-        <div>
-          <h2>Starships</h2>
+        </Section>
+        <Section title="Starships" toggle={film.starships.length}>
           <StarshipList starships={film.starships}/>
-        </div>
-        <div>
-          <h2>Vehicles</h2>
+        </Section>
+        <Section title="Vehicles" toggle={film.vehicles.length}>
           <VehicleList vehicles={film.vehicles}/>
-        </div>
+        </Section>
       </section>
     )
   }

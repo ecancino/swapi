@@ -4,6 +4,7 @@ import React from 'react'
 import Close from './Close'
 import u from './../utils'
 import CharacterList from './CharacterList'
+import Section from './Section'
 
 export default class PlanetDetail extends React.Component {
   constructor(props) {
@@ -36,10 +37,9 @@ export default class PlanetDetail extends React.Component {
             <p className="col-xs-3"><em>Rotation:</em> {planet.rotation_period}</p>
           </div>
         </div>
-        <div>
-          <h2>Residents</h2>
+        <Section title="Residents" toggle={planet.residents.length}>
           <CharacterList characters={planet.residents}/>
-        </div>
+        </Section>
       </section>
     )
   }
