@@ -6,6 +6,7 @@ import u from './../utils'
 import CharacterList from './CharacterList'
 import PlanetList from './PlanetList'
 import FilmList from './FilmList'
+import Section from './Section'
 import Loader from './Loader'
 
 export default class SpeciesDetail extends React.Component {
@@ -40,18 +41,15 @@ export default class SpeciesDetail extends React.Component {
             <p className="col-xs-12"><em>Skin:</em> {species.skin_colors}</p>
           </div>
         </div>
-        <div>
-          <h2>People</h2>
+        <Section title="People" toggle={species.people.length}>
           <CharacterList characters={species.people}/>
-        </div>
-        <div>
-          <h2>Homeworld</h2>
+        </Section>
+        <Section title="Homeworld" toggle={species.homeworld.length}>
           <PlanetList planets={[species.homeworld]}/>
-        </div>
-        <div>
-          <h2>Films</h2>
+        </Section>
+        <Section title="Films" toggle={species.films.length}>
           <FilmList films={species.films}/>
-        </div>
+        </Section>
       </section>
     )
   }

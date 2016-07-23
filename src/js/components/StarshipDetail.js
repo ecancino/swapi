@@ -4,6 +4,7 @@ import React from 'react'
 import Close from './Close'
 import u from './../utils'
 import CharacterList from './CharacterList'
+import Section from './Section'
 
 export default class StarshipDetail extends React.Component {
   constructor(props) {
@@ -41,10 +42,9 @@ export default class StarshipDetail extends React.Component {
             <p className="col-xs-3"><em>Length:</em> {starship.length}</p>
           </div>
         </div>
-        <div>
-          <h2>Pilots</h2>
+        <Section title="Pilots" toggle={starship.pilots.length}>
           <CharacterList characters={starship.pilots}/>
-        </div>
+        </Section>
       </section>
     )
   }

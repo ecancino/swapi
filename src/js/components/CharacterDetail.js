@@ -8,6 +8,7 @@ import StarshipList from './StarshipList'
 import VehicleList from './VehicleList'
 import PlanetList from './PlanetList'
 import FilmList from './FilmList'
+import Section from './Section'
 import Loader from './Loader'
 
 export default class CharacterDetail extends React.Component {
@@ -41,26 +42,21 @@ export default class CharacterDetail extends React.Component {
             <p className="col-xs-3"><em>Skin:</em> {person.skin_color}</p>
           </div>
         </div>
-        <div>
-          <h2>Species</h2>
+        <Section title="Species" toggle={person.species.length}>
           <SpeciesList species={person.species}/>
-        </div>
-        <div>
-          <h2>Homeworld</h2>
+        </Section>
+        <Section title="Homeworld" toggle={person.homeworld.length}>
           <PlanetList planets={[person.homeworld]}/>
-        </div>
-        <div>
-          <h2>Starships</h2>
+        </Section>
+        <Section title="Starships" toggle={person.starships.length}>
           <StarshipList starships={person.starships}/>
-        </div>
-        <div>
-          <h2>Vehicles</h2>
+        </Section>
+        <Section title="Vehicles" toggle={person.vehicles.length}>
           <VehicleList vehicles={person.vehicles}/>
-        </div>
-        <div>
-          <h2>Films</h2>
+        </Section>
+        <Section title="Films" toggle={person.films.length}>
           <FilmList films={person.films}/>
-        </div>
+        </Section>
       </section>
     )
   }

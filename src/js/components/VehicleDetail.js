@@ -4,6 +4,7 @@ import React from 'react'
 import Close from './Close'
 import u from './../utils'
 import CharacterList from './CharacterList'
+import Section from './Section'
 import Loader from './Loader'
 
 export default class VehicleDetail extends React.Component {
@@ -38,10 +39,9 @@ export default class VehicleDetail extends React.Component {
             <p className="col-xs-3"><em>Passengers:</em> {vehicle.passengers}</p>
           </div>
         </div>
-        <div>
-          <h2>Pilots</h2>
+        <Section title="Pilots" toggle={vehicle.pilots.length}>
           <CharacterList characters={vehicle.pilots}/>
-        </div>
+        </Section>
       </section>
     )
   }
